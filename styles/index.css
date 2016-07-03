@@ -1,0 +1,25 @@
+body{
+    background-color: #AAAAAA;
+    color: #FFFFFF;
+    font-family: verdana;
+    background-image:url('../images/pattern.jpg');
+    /* afkomstig van "Geometric Patterns Wallpaper" by ammer, http://www.freedigitalphotos.net/  c081fa 3dd8ff*/
+}
+
+header {
+    width: auto;
+    height: auto;
+    padding: 10px 200px 10px 10px;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+    color: #3dd8ff;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px #333333;
+    text-shadow: 2px 2px 4px #666666;
+    border-radius: 5px;
+    background-image:url('../images/superhieper.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    font-family: impact;
+    font-size:30px;
+}
