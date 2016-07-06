@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get the text of the first child node of the select element.</p>
+
+<div id="mySelect">
+<ul>
+    <li id="Hallo1" value="">Hallo</li>
+    <li id="Hallo2">Hallo</li>
+    <li id="Hallo3">Hallo</li>
+    <li id="Hallo4">Hallo</li>
+    <li id="Hallo5">Hallo</li>
+</ul>
+</div>
+<br>
+<br>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var c = document.getElementById("mySelect").getElementsByTagName("li");
+        var txt = "";
+        var i;
+        for (i = 0; i < c.length; i++) {
+            txt = txt + c[i].innerText + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+    }
+</script>
+
+</body>
+</html>
+
