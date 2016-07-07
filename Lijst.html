@@ -2,37 +2,20 @@
 <html>
 <body>
 
-<p>Click the button to get the text of the first child node of the select element.</p>
+<ol id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Water</li>
+    <li>Soda</li>
+</ol>
 
-<div id="mySelect">
-<ul>
-    <li id="Hallo1" value="">Hallo</li>
-    <li id="Hallo2">Hallo</li>
-    <li id="Hallo3">Hallo</li>
-    <li id="Hallo4">Hallo</li>
-    <li id="Hallo5">Hallo</li>
-</ul>
-</div>
-<br>
-<br>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
+<button type="button" onclick="myFunction()">Change list-item marker type</button>
 
 <script>
     function myFunction() {
-        var c = document.getElementById("mySelect").getElementsByTagName("li");
-        var txt = "";
-        var i;
-        for (i = 0; i < c.length; i++) {
-            txt = txt + c[i].innerText + "<br>";
-        }
-
-        document.getElementById("demo").innerHTML = txt;
+        document.getElementById("myList").style.listStyleType = "none";
     }
 </script>
 
 </body>
 </html>
-
