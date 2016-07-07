@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dom append child</title>
+
+	<style>
+
+		#hallo{
+			background-color: lightblue;
+		}
+	</style>
+	<script type="text/javascript">
+
+		function change(){
+			var tekst=document.getElementById('input').toString(document.getElementById('input').value);
+			var x=document.createElement('li');
+			var k=document.createTextNode(tekst);
+			x.appendChild(k);
+			//document.body.appendChild(x);
+
+			var element=document.getElementById('hallo').appendChild(x);
+
+		}
+		function function2(){
+			hallo.removeChild(hallo.firstChild);
+		}
+	</script>
+
+</head>
+
+
+<body>
+<ul id="hallo"></ul>
+<form id="form1">
+	Name: <input id="input" name="name" type="text" size="20">
+</form>
+<button onclick="change()">klik</button>
+
+<button onclick="function2()">klik</button>
+</body>
+</html>
